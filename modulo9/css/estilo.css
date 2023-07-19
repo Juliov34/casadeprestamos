@@ -75,7 +75,6 @@ body {
 overflow-x: hidden; /* Prevent scroll on narrow devices */
 }
 
-
 @media (max-width: 991.98px) {
 .offcanvas-collapse {
 position: fixed;
