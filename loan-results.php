@@ -11,21 +11,18 @@
             // Datos simulados de los préstamos (pueden venir de una base de datos)
             $loans = array(
                 1 => array(
-                    'nombre' => 'Préstamo 1',
+                    'nombre' => 'Luis Gerardo Carbajal Rivera',
                     'tasa_interes' => 8.5,
                     'plazos_pago' => 12,
-                    'otra_informacion' => 'Información adicional sobre el préstamo 1'
+                    'otra_informacion' => 'Nuestro préstamo especial incluye un seguro de desempleo que protege tu pago mensual en caso de pérdida involuntaria de empleo. Así, puedes tener tranquilidad en momentos difíciles y seguir cumpliendo con tus obligaciones financieras.'
                 ),
                 2 => array(
-                    'nombre' => 'Préstamo 2',
+                    'nombre' => 'Juan José Pacheco Reyes',
                     'tasa_interes' => 7.2,
                     'plazos_pago' => 24,
-                    'otra_informacion' => 'Información adicional sobre el préstamo 2'
+                    'otra_informacion' => 'Ofrecemos un programa de pagos flexibles que te permite ajustar la cantidad mensual según tus necesidades. Si experimentas un imprevisto o un cambio en tu situación financiera, puedes modificar temporalmente el monto del pago para adaptarlo a tu capacidad económica actual.'
                 )
-                // Agrega más préstamos aquí
             );
-
-            // Verificar si se recibió un ID de préstamo válido desde la URL
             if (isset($_GET['id']) && array_key_exists($_GET['id'], $loans)) {
                 $loan_id = $_GET['id'];
                 $loan = $loans[$loan_id];
