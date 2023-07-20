@@ -1,0 +1,36 @@
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .social-button {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  .facebook {
+    background-color: #3b5998;
+  }
+  
+  .twitter {
+    background-color: #1da1f2;
+  }
+  
+  .follow {
+    background-color: #ff8800;
+  }
+
+  .banner {
+    background-color: #808080;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+  }
