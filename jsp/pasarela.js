@@ -69,15 +69,25 @@ formulario.inputNumero.addEventListener('keyup', (e) => {
 	if(valorInput[0] == 4){
 		logoMarca.innerHTML = '';
 		const imagen = document.createElement('img');
-		imagen.src = 'img/logos/visa.png';
+		imagen.src = 'logo/visa.png';
 		logoMarca.appendChild(imagen);
 	} else if(valorInput[0] == 5){
 		logoMarca.innerHTML = '';
 		const imagen = document.createElement('img');
-		imagen.src = 'img/logos/mastercard.png';
+		imagen.src = 'logo/mastercard.png';
+		logoMarca.appendChild(imagen);
+
+	} else if(valorInput[0] == 1){
+		logoMarca.innerHTML = '';
+		const imagen = document.createElement('img');
+		imagen.src = 'logo/paypal.png';
+		logoMarca.appendChild(imagen);
+	} else if(valorInput[0] == 7){
+		logoMarca.innerHTML = '';
+		const imagen = document.createElement('img');
+		imagen.src = 'logo/stripe.svg';
 		logoMarca.appendChild(imagen);
 	}
-
 	// Volteamos la tarjeta para que el usuario vea el frente.
 	mostrarFrente();
 });
