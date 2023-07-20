@@ -1,0 +1,17 @@
+/* Estilo del botón de pago */
+.paypal-button {
+    background-color: #0070ba;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+/* Estilo del botón de pago cuando se le da el hover */
+.paypal-button:hover {
+    background-color: #005c99;
+}
