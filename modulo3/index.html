@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Préstamo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="containerm">
+        <nav class="menu-container" id="menuContainer">
+            <ul class="menu">
+                <li><a href="#">Modulo 1</a></li>
+                <li><a href="#">Modulo 2</a></li>
+                <li><a href="#">Modulo 3</a></li>
+                <li><a href="#">Modulo 4</a></li>
+            </ul>
+        </nav>
+        
+    </div>
+
+    <div class="container">
+        <div class="left-column">
+            <h2>¡Solicita un préstamo ahora y haz realidad tus proyectos!</h2>
+            <p>Con nuestros préstamos flexibles, puedes obtener el dinero que necesitas en poco tiempo.</p>
+            <p class="slogan">Tu futuro, nuestra prioridad</p>
+        </div>
+        <div class="right-column">
+            <h1>Solicitud de Préstamo</h1>
+            <form id="loanForm">
+                <!-- Campos de información personal (los mencionados anteriormente) -->
+
+                <!-- Nuevos iconos y tabla de opciones de préstamo -->
+                <div class="loan-options">
+                    <div class="loan-option">
+                        <i class="fas fa-car fa-3x"></i>
+                        <button type="button" class="loan-button" data-amount="1000">Movilidad</button>
+                    </div>
+                    <div class="loan-option">
+                        <i class="fas fa-tools fa-3x"></i>
+                        <button type="button" class="loan-button" data-amount="1000">Reforma</button>
+                    </div>
+                    <div class="loan-option">
+                        <i class="fas fa-glass-cheers fa-3x"></i>
+                        <button type="button" class="loan-button" data-amount="1000">Ocio</button>
+                    </div>
+                </div>
+
+                <!-- Nueva barra de préstamo -->
+                <h2>Selecciona el monto del préstamo</h2>
+                <div class="loan-bar">
+                    <input type="range" min="1000" max="100000" step="1000" value="1000" id="loanAmount">
+                    <output for="loanAmount" id="loanOutput">$1000</output>
+                </div>
+
+                <input type="submit" value="Enviar solicitud" id="submitButton">
+            </form>
+            
+        </div>
+        <div class="contec"> <h1>Préstamos disponibles</h1>
+        <div class="main-content" id="mainContent">
+            <!-- Contenido oculto por defecto -->
+            <div class="table-container" id="tableContainer">
+               
+                <table id="loanTable">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Monto</th>
+                            <th>Interés</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Juan Pérez</td>
+                            <td>$1000</td>
+                            <td>5%</td>
+                        </tr>
+                        <tr>
+                            <td>María Gómez</td>
+                            <td>$2000</td>
+                            <td>4%</td>
+                        </tr>
+                        <tr>
+                            <td>Luis Torres</td>
+                            <td>$1500</td>
+                            <td>3%</td>
+                        </tr>
+                        <tr>
+                            <td>Ana López</td>
+                            <td>$2500</td>
+                            <td>6%</td>
+                        </tr>
+                        <!-- Agrega más filas con datos de préstamos -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>

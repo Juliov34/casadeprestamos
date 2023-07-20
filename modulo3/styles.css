@@ -1,0 +1,310 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Cambiamos la dirección del flexbox a vertical */
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+  }
+  
+  .containerm {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex: 1; /* Ocupa todo el espacio vertical del contenedor principal */
+  }
+  
+  .menu-container {
+    background-color: #007BFF;
+    padding: 13px 0; /* Ajustamos el espaciado vertical del menú */
+    width: 1100px; /* El menú ocupará todo el ancho */
+    position: relative; /* Lo fijamos en la parte superior */
+    top: 0; /* Lo ubicamos en la parte superior */
+  }
+  
+  .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu li {
+    margin: 0 10px;
+  }
+  
+  .menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .menu li a:hover {
+    background-color: #0056b3;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap; /* Agregamos flex-wrap para que los elementos se acomoden en filas si el espacio es insuficiente */
+    justify-content: space-between; /* Ajustamos el espaciado horizontal entre los elementos */
+    background-color: #f2f2f2;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .background-image {
+    flex: 1; /* Ocupa el 50% del espacio horizontal del contenedor */
+    padding: 50px; /* Espaciado interno del contenedor */
+    color: #fff; /* Texto de color blanco */
+    background-image: url("https://tytenlinea.com/wp-content/uploads/2016/08/manos-cerrando-un-trato.jpg"); /* URL de la imagen */
+    background-size: cover; /* La imagen cubrirá todo el contenedor */
+    background-position: center; /* Centramos la imagen */
+    background-repeat: no-repeat; /* Evitamos que la imagen se repita */
+    border-radius: 5px; /* Agregamos bordes redondeados al contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agregamos sombra al contenedor */
+  }
+  
+  .background-image h2,
+  .background-image p,
+  .background-image .slogan {
+    position: relative; /* Establecemos posición relativa para poder ubicar el texto */
+    z-index: 1; /* Colocamos el texto por encima de la imagen */
+  }
+  
+ 
+  .left-column {
+    flex: 1; /* Ocupa la mitad del espacio horizontal del contenedor */
+    padding: 50px;
+    color: #fff;
+    background-image: url("https://www.elplural.com/uploads/s1/55/90/18/apreton-de-manos-pixabay.jpeg");
+    background-size: cover; /* La imagen cubre toda la columna izquierda */
+    background-position: center; /* Centramos la imagen */
+    background-repeat: no-repeat;
+    border-radius: 5px 0 0 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .left-column h2 {
+    font-size: 36px; /* Tamaño de fuente más grande */
+    margin-bottom: 20px;
+    font-weight: bold; /* Texto en negrita */
+  }
+  
+  .left-column p {
+    font-size: 24px; /* Tamaño de fuente más grande */
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .left-column .slogan {
+    font-size: 28px; /* Tamaño de fuente más grande */
+    font-style: italic;
+  }
+  
+  .right-column {
+    flex: 1; /* Ocupa la otra mitad del espacio horizontal del contenedor */
+    padding: 50px;
+    border: 5px solid #fff;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center; /* Centramos el texto en el título */
+  }
+  
+  form {
+    display: grid; /* Usamos el grid layout para alinear los campos */
+    gap: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.2s;
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border-color: #007bff; /* Cambiamos el color del borde al enfocar */
+  }
+  
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.2s;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3; /* Cambiamos el color al pasar el cursor */
+  }
+table {
+    width:900px; 
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    padding: 16px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #050a0f;
+    font-weight: bold;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* ... Estilos existentes ... */
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  .loan-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  
+  .loan-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .loan-option i {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #007bff;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    padding: 16px;
+  }
+  
+  .loan-option button {
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .loan-option button:hover {
+    background-color: #0056b3;
+  }
+  
+  .loan-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  input[type="range"] {
+    flex: 1;
+    -webkit-appearance: none;
+    width: 100%;
+    margin: 0;
+  }
+  
+  input[type="range"]:focus {
+    outline: none;
+  }
+  
+  input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: #007bff;
+    border-radius: 5px;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background: #007bff;
+    cursor: pointer;
+    margin-top: -8px;
+    border: 2px solid #fff;
+  }
+  
+  output {
+    margin-left: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  
+.main-content{
+    text-align: center;
+}
+.contec{
+text-align: center;
+  }
+  
+  .table-container {
+    flex: 1000; /* La tabla ocupará todo el espacio restante */
+    display: flex;
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center; /* Centramos verticalmente */
+    margin-top: 30px; /* Agregamos un espaciado superior para separar del menú */
+  }
+  
+  #loanTable {
+    width: 1200px; /* La tabla ocupará todo el ancho del contenedor */
+  }
+  
+  
+  
+  
+  
+  
+  
