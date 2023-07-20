@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora de Prestamos</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Calculadora de Prestamos</h1>
+  <div class="calculator">
+    <label for="loan-amount">Monto del Prestamo:</label>
+    <input type="number" id="loan-amount" placeholder="Ingrese el monto del prestamo">
+
+    <label for="loan-duration">Duracion (en meses):</label>
+    <input type="number" id="loan-duration" placeholder="Ingrese la duracion del prestamo">
+
+    <button onclick="calculateLoan()">Calcular</button>
+
+    <div id="result">
+      <h2>Resultado:</h2>
+      <p>Pago mensual: <span id="monthly-payment"></span></p>
+      <p>Intereses totales: <span id="total-interest"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

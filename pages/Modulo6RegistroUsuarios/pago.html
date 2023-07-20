@@ -1,0 +1,21 @@
+
+    <link rel="stylesheet" href="pago.css">
+
+
+    <!-- Botón de pago de PayPal -->
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_xclick">
+        <input type="hidden" name="business" value="correo-comerciante@ejemplo.com">
+        <input type="hidden" name="item_name" value="Camiseta de ejemplo">
+        <input type="hidden" name="amount" value="20.00">
+        <input type="hidden" name="currency_code" value="USD">
+        <button type="submit" class="paypal-button">Pagar con PayPal</button>
+        <button type="submit" class="paypal-button">Pagar con Mercado pago</button>
+        <button type="submit" class="paypal-button">Pagar con Tarjeta de credito</button>
+        <button type="submit" class="paypal-button">Pagar con Tarjeta de debito</button>
+
+
+
+    </form>
+
+
